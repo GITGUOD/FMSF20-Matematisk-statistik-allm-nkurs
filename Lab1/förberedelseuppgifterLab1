@@ -1,0 +1,27 @@
+# Syfte
+Syftet med dagens laborationen är att du skall:
+* träna på olika sätt att illustrera och beskriva ett datamaterial i Python
+* få förståelse för begreppen fördelningsfunktion, täthets- och sannolikhetsfunktion samt sambandet mellan stickprov och population
+* träna på att beräkna sannolikheter i Python
+* bli bekant med inversmetoden för att generera slumptal
+
+# Förberedelseuppgifter
+* Förvissa dig om att du förstår vad täthetsfunktion och fördelningsfunktion är och hur de förhåller sig till varandra.
+* Vad är en kvantil?
+    Svar: Ett värde som motsvarar en viss procent av fördelningen.
+    Exempel:
+        0.5-kvantil = medianen (50 %)
+        0.25-kvantil = första kvartilen (25 %)
+* Ta reda på hur man använder inversmetoden för att transformera slumptal till en önskad fördelning. (Kap.~8.4).
+
+# Python paket
+Vi kommer använda följande paket i Python
+
+* **numpy** Grundläggande linjär algebra och nummerik.
+* **scipy.stats** För beräkningar av täthets- och fördelningsfunktioner.
+* **pandas** För data hantering.
+* **matplotlib.pyplot** Grundläggande plot-funktioner.
+* **seaborn** Bättre plot-funktioner för pandas objekt.
+
+## Importera moduler och ladda upp filer till Colab
+Börja med att importera ett antal Python paket (om du inte använder *colabs* kan du behöva installera paketen först)
