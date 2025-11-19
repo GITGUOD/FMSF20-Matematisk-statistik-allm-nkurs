@@ -7,12 +7,25 @@ Syftet med dagens laborationen är att du skall:
 
 # Förberedelseuppgifter
 * Förvissa dig om att du förstår vad täthetsfunktion och fördelningsfunktion är och hur de förhåller sig till varandra.
+    - Täthetsfunktion:
+        - Anger hur mycket sannolikhetsmassa per längdenhet som finns i punkten X för kontinuerliga stokastiska variabler.
+            - En stokastisk variabel är ett tal som bestäms av utfallet i ett slumpförsök
+        - Den används för att beräkna sannolikheter genom integraler.
+        - Täthetsfunktionen fås genom att derivera fördelningsfunktionen:
+
+    - Fördelningsfunktion
+        - Bestämmer entydigt sannolikhetsfördelningen.
+        - Ger sannolikheten att variabeln är mindre än eller lika med ett visst värde:
+            - 𝐹(𝑥) = 𝑃(𝑋≤𝑥)
+        - Fördelningsfunktionen fås genom att integrera täthetsfunktionen:
 * Vad är en kvantil?
     Svar: Ett värde som motsvarar en viss procent av fördelningen.
     Exempel:
         0.5-kvantil = medianen (50 %)
         0.25-kvantil = första kvartilen (25 %)
 * Ta reda på hur man använder inversmetoden för att transformera slumptal till en önskad fördelning. (Kap.~8.4).
+    - F(x) "omvandlar" en fördelning till ett likformigt tal mellan 0 och 1. Inversen 𝐹^−1 gör motsatsen: den tar ett likformigt tal och "översätter" det till den fördelning vi vill ha.
+    - 1 - F(x)
 
 # Python paket
 Vi kommer använda följande paket i Python
