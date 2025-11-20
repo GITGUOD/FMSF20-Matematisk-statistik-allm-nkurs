@@ -1,0 +1,49 @@
+**Uppgift:** Jämför scatterplot, histogram/täthet och fördelningsfunktionerna. Hur hänger de ihop med varandra?
+- Dom alla beskriver olika saker men i samma kontext, histogrammen visar fördelningen på hur män och kvinnor har för temperaturer medan scatterplotten visar var alla personer befinner sig i temperaturskalan, dvs räknar. Proportiongrafen visar proportionen på hur män och kvinnor ser ut, vart de flesta befinner sig i skalan/grafen. I slutändan försöker de ändå säga samma sak.
+
+**Uppgift:** Välj ut några datapunkter i de olika figurerna och försök hitta dem i de andra figurerna.
+Ta t.ex datan, är det fler män eller kvinnor vid 38 grader+? Alla grafer visar att det är mest män som överstiger. Eller tar 37grader som exempelvis, hur ser andelen män och kvinnor ut? Hur är de fördelade? Jo histogrammen, samt scatterplotten presenterar att det är män som är överlägsen i den grupp. I proportiongrafen, visar det likadant, det är mest eller störst proportionell ökning vid 37grader för män, det betyder att det är fler män som befinner sig i den omgivningen eller gränsen.
+
+I fördelningsfunktionen kan vi avläsa hur många av observationerna som är mindre än eller lika med ett visst tal.
+
+**Uppgift:** Välj $x = 37$ och försök avgöra i figurerna (histogram/täthet och fördelningsfunktionerna) hur många av värdena som är mindre än eller lika med 37.
+Svar:
+    Antal mindre än: 91 av 130
+    Andel mindre än: 0.7
+
+**Uppgift:** Stämmer det med din uppskattning från figuren?
+
+    - Ja om man tittar på proportion grafen, de andra graferna visar inte så väl, histogramen visar dock att det e större andel som befinner sig under 37grader men scatterplotten, nej, går säkert om man räknar manuellt.
+
+**Uppgift:** Påminner histogrammet och fördelningsfunktionen om någon vanliga modell för stokastiska variabler?
+
+    - En normalfördelning antar jag, en topp, en symmetrisk och liknande spridning åt både hållen.
+
+**Uppgift:** Hur förändras histogram och empirisk fördelningsfunktion när antalet observationer ökar? Hur bra stämmer dessa med sina teoretiska motsvarigheterna?
+    - Den blir mer likformig, mer likt linjen som har ritats upp. Jag skulle gissa på att fördelningen blir jämt och liknar mycket mer en normalfördelning eftersom vi har fler antal observationer
+
+**Uppgift:** Vad blir nu andelen värden som är mindre än eller lika med 37? Hur mycket ändrar det sig mellan olika simuleringar?
+    - Svar: 200 Observationer:
+        - Från simulerad data P(X<=37) =  0.655
+        - Från observationer data P(X<=37) =  0.7
+    - Svar: 20 Observationer:
+        - Från simulerad data P(X<=37) =  0.7
+        - Från observationer data P(X<=37) =  0.7
+     - Svar: 2000 Observationer:
+        - Från simulerad data P(X<=37) =  0.6705
+        - Från observationer data P(X<=37) =  0.7
+    Svar: från Observationsdata sannolikheten så är den konstant 0.7, men vid simulerad data så ändras den eftersom det beror på stickprovet vi har, vilket leder till mindre variation i slumpmässigheten
+
+
+**Uppgift:** Vad händer med fördelningen när $\mu$ och $\sigma$ ändras?  Vad representerar $\mu$ och $\sigma$ i fördelningen?
+
+**Uppgift:** Fördelningsfunktionen är ju integralen av täthetsfunktionen. 
+
+Relatera dem till varandra i figuren. Hur ändrar sig, t.ex. fördelningsfunktionen när $x$ ligger nära $\mu$ jämfört med när $x$ ligger långt från $\mu$? Hur ser täthetsfuktionen ut då (stor eller liten?)
+    Svar: 
+        μ är medelvärdet → fördelningen “centreras” runt detta värde. Om 
+        μ ökar, flyttas hela kurvan åt höger; om 
+        μ minskar, flyttas den åt vänster.
+        σ är standardavvikelsen → fördelningens “bredd” eller spridning.
+        Stor σ → kurvan blir bred och låg
+        Liten σ → kurvan blir smal och hög

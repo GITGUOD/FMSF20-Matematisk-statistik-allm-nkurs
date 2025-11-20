@@ -1,0 +1,53 @@
+Jämför histogram och box-/violinplot. Är det någon skillnad mellan män och kvinnor? Hur stor verkar skillnaden vara?
+    - Svar: Ja, på histogrammet är det tydligare fördelning på män/kvinnor som har vilken temperatur. Men, på box/violinplotten kan
+    - man enklare se medianvärdet, hur långt värderna sträcker sig mellan könen och kvartilerna.
+    - Median högre för Män
+    - Större variation hos Män än Kvinnor då vi ser att svansen når långt under 36- samt 38 grader på någon enstaka fall hos männen.
+    - Större kvartil hos kvinnor
+
+**Mozquizto:** Pröva med några andra värden på $x$.  Hur borde andelen ändra sig när $x$ ökar respektive minskar? Jämför med figuren.
+    Antal mindre än: 129 av 130
+    Andel mindre än: 0.9923076923076923
+    Svar: Den ökar eller minskar, beroende på vad alla våra provsticken finns någonstans, eftersom alla har en temperatur under 38 grader så är det majoriteten, dvs 129av 130 i detta fallet mer än 99% av vår datan
+
+medelvärde= 36.80512823076923
+standardavvikelse= 0.4073239677872093
+
+**Mozquizto:** Vilken fördelning verkar data komma från?
+    svar: Normalfördelning
+
+
+**Mozquizto:** Hur stämmer sannolikhets beräkningen med tidigare beräkningar av andelen värden som är mindre än eller lika med 37 (eller andra värden på $x$)? 
+    Svar: Här är uträkningen P(X<=37) =  0.683824206491563 och det skulle nog kunna stämma ju större stickprov värde vi har eftersom den närmar sig mer åt det värdet
+
+
+**Mozquizto:** Läs av kvantilen $x_{0.05}$ där $\alpha = 0.05$ ur dina figurer, med hjälp av definitionen ovan. Både som skattningar i de två empiriska fördelningsfunktionerna och exakt i den teoretiska.
+**Mozquizto:** Jämför med det exakta värdet, som kan fås med funktionen **stats.norm.ppf** 
+
+Svar:
+    N = 20
+    och X_a = 0.05
+    Kvantil från simulerad data: 36.08894843825871
+    Teoretisk kvantil: 36.13513992501017
+
+    N = 5000
+    Kvantil från simulerad data: 36.12735123798093
+    Teoretisk kvantil: 36.13513992501017
+
+    X_a = 0,95
+    N = 20
+    Kvantil från simulerad data: 37.573949807825265
+    Teoretisk kvantil: 37.47511653652828
+
+    N = 2000:
+    Kvantil från simulerad data: 37.475150546136675
+T   eoretisk kvantil: 37.47511653652828
+
+    N = 5000
+    Kvantil från simulerad data: 37.46532069199585
+    Teoretisk kvantil: 37.47511653652828
+
+    Den varierar mindre
+
+**Mozquizto:** Beräkna fördelningsfunktionens invers och använd den för att transformera slumptalen i vektorn **u** till att komma från en exponentialfördelning med $\lambda = 3$. (dvs lös ut $x$ som funktion av $u$ i $u=1-e^{-\lambda x}$.
+- (1/Lambda) * np.log(1 - u)
