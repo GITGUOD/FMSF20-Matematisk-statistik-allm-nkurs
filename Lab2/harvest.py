@@ -71,7 +71,7 @@ def harvest(n, p, mu, y_cond=None):
       #we also need to add (x*mu)^y (but not for x[0]=0)
       pX_Y[1:] = pX_Y[1:] + y_cond*np.log(x[1:]*mu)
       #first point should instead be log(0)=-Inf (0 when we transform back)
-      pX_Y[0] = -np.Inf
+      pX_Y[0] = -np.inf
       #convert to standard scale
       pX_Y = np.exp(pX_Y-max(pX_Y))
       #and normalize
@@ -116,3 +116,5 @@ def harvest(n, p, mu, y_cond=None):
     
     ##return
     return fig
+
+# %%
