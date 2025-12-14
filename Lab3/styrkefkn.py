@@ -42,10 +42,10 @@ def styrkefkn(mu0, sigma, n, alpha=0.05, riktning='!=', mu_sant=None):
 	match riktning:
 		case "<":
 			k1 = stats.norm.ppf(alpha, mu0, s)
-			k2 = np.Inf
+			k2 = np.inf
 			x = np.linspace(k1-4*s, mu0+3*s, 1000)
 		case ">":
-			k1 = -np.Inf
+			k1 = -np.inf
 			k2 = stats.norm.ppf(1-alpha, mu0, s)
 			x = np.linspace(mu0-3*s, k2+4*s, 1000)
 		case "!=":
@@ -140,3 +140,5 @@ def styrkefkn(mu0, sigma, n, alpha=0.05, riktning='!=', mu_sant=None):
 
 	
 
+
+# %%
